@@ -7,10 +7,6 @@ args.add_argument('--image',help='image',metavar='')
 args.add_argument('--zip',help='ZipFile',metavar='')
 
 
-
-
-group = args.add_mutually_exclusive_group()
-group.add_argument('--scan',help='scan site Using: --scan -u [url] ',action="store_true")
 args = args.parse_args()
 
 def main():
